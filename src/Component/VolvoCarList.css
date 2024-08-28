@@ -1,0 +1,132 @@
+.container {
+    width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .car-headers {
+    margin-bottom: 10px;
+  }
+  
+  .car-headers h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .car-model {
+    font-weight: bold;
+    margin-right: 10px; 
+  }
+  
+  .img-body {
+    text-align: center;
+  }
+  
+  .cars-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  .next-slick-arrow {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .prev-arrow {
+    transform: rotate(180deg);
+  }
+  
+  @media (min-width: 768px) {
+    .container > div {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container > div {
+      flex: 1 1 calc(25% - 20px);
+    }
+  }
+  
+  .parent-container {
+    position: relative;
+    height: 100vh; 
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 300px; 
+    right: 50px; 
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .sub-heading {
+    text-align: center;
+  }
+
+  .sub-heading .learn {
+    margin-right: 20px;
+  }
+
+  .sub-heading .learn, .sub-heading .shop {
+    font-weight: bold;
+    color: #1677ff;
+    font-size: 10px;
+  }
+
+  input[type="text"] {
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+  .Slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.Slider .slick-dots li {
+  margin: 0 10px;
+}
+
+.Slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.Slider .slick-dots li.slick-active button {
+  background: #333;
+}
+  
+  
+  @media (max-width: 768px) {
+    .prev-arrow, .next-arrow {
+      display: none;
+    }
+  }
+  
+  
+  
